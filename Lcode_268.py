@@ -1,14 +1,11 @@
 class Solution(object):
     def missingNumber(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        m=min(nums)
-        while m in nums:
-            m+=1
-        return m
-
+        nums_set=set(nums)
+        n=0
+        while n in nums_set:
+            n+=1
+        return n
+    
 c=Solution()
 
-print(c.missingNumber([1,2,3,5]))
+print(c.missingNumber([1]))

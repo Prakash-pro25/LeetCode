@@ -1,21 +1,16 @@
-""" nums=[10,3,4,5,6]
+nums=[10,3,4,5,6]
 
 largest = float('-inf')
 second = float('-inf')
 
-
-
 for i in nums:
-
     if i > largest:
         second = largest
         largest = i
     elif i > second and i != largest:
         second = i
 
-
-
-print(second) """
+print(second)
 
 # i=10 larg=-inf sec=-inf check i > larg  larg=i => sec=-inf larg=10
 #        |--------|    
@@ -31,30 +26,9 @@ print(second) """
 
 # o/p 6
 
-
 n = 123456
 product = 0
-
 while n > 0:
     dig = n % 10   #  123456 => 6  5
     product = product * 10 + dig # =>65
     n = n // 10 # 12345
-
-print(product)
-
-
-""" 
-         1 2 3 4 5 6       6 5 4 3 2 1
-         1 0 0 0 0 0       6 0 0 0 0 0
-           2 0 0 0 0         5 0 0 0 0
-             3 0 0 0           4 0 0 0
-               4 0 0             3 0 0
-                 5 0               2 0
-                   6                 1
-
-
-
-
-
-
- """

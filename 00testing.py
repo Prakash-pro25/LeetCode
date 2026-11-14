@@ -32,11 +32,20 @@ while n > 0:
     dig = n % 10   #  123456 => 6  5
     product = product * 10 + dig # =>65
     n = n // 10 # 12345 """
-
+""" 
 # Standard Python bitwise NOT on binary 1001 (decimal 9)
 print(~0b1001)          # Output: -10
 print(~int(bin(5)))
 
 # Flipping ONLY the 4 bits (1001 -> 0110)
 flipped = ~0b1001 & 0b1111
-print(bin(flipped))     # Output: 0b110 (which is 6)
+print(bin(flipped))     # Output: 0b110 (which is 6) """
+
+
+a="cdiop"
+k=3
+new=""
+for i in range(0,3,-1):
+    new+=i
+for i in range()
+
